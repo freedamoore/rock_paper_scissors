@@ -1,0 +1,53 @@
+:root{
+  --color-scissors-1: #ec9e0e;
+  --color-scissors-2: #eca922;
+  --color-paper-1: #4865f4;
+  --color-paper-2: #5671f5;
+  --color-rock-1: #dc2e4e;
+  --color-rock-2: #dd405d;
+  --color-dark-text: #3b4363;
+  --color-score-text: #2a46c0;
+  --color-header-outline: #606e85;
+  --color-background-one: #1f3756;
+  --color-background-two: #141539;
+}
+
+/* Primary
+Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
+Neutral
+Dark Text: hsl(229, 25%, 31%)
+Score Text: hsl(229, 64%, 46%)
+Header Outline: hsl(217, 16%, 45%)
+Background
+Radial Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
+Fonts
+Family: Barlow Semi Condensed
+Weights: 600, 700 */
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: radial-gradient(var(--color-background-one), var(--color-background-two));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }

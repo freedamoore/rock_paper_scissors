@@ -38,6 +38,7 @@ Weights: 600, 700 */
 
 html{
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body{
@@ -45,9 +46,27 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+
+  color: #fff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.container{
+
+  max-width: 90rem;
+
+  margin: 3rem auto;
+
+    /* background-color: #fff; */
+    /* min-height: 50rem; */
 }
 
 
-
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-scissors-1);
+}

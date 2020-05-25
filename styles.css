@@ -49,7 +49,10 @@ body{
 .score-container {
   border: 2px solid var(--color-header-outline);
   border-radius: 16px;
-  margin: 8rem;
+  width: 90%;
+  margin: 0 auto;
+  /* max-width: 1000px;
+  margin: 0 auto; */
   display: flex;
   justify-content: space-between;
 }
@@ -222,6 +225,11 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+
+  /* .score-container {
+    margin: 3rem;
+  } */
+
   .rules-container{
     justify-content: center;
   }

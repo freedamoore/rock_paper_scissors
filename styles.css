@@ -37,13 +37,8 @@ body{
 }
 
 .container{
-
   max-width: 90rem;
-
   margin: 3rem auto;
-
-    /* background-color: #fff; */
-    /* min-height: 50rem; */
 }
 
 .score-container {
@@ -83,21 +78,26 @@ body{
 }
 
 .game-container{
-  background-color: yellow;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 20px;
+  justify-items: center;
 }
 
 .weapon-selection{
   background-image: url('images/bg-triangle.svg');
   background-position: center;
   background-repeat: no-repeat;
+  grid-column: 1/4;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /* justify-items: center; */
   align-items: center;
   height: 600px;
-
+  width: 100%;
 }
 
 .weapon-container{
@@ -113,6 +113,9 @@ body{
 
 .paper-container{
   border: 15px solid var(--color-paper-1);
+}
+
+.paper-container-start{
   justify-self: end;
   grid-column: 1;
   transform: translateX(50%);
@@ -120,6 +123,9 @@ body{
 
 .scissors-container{
   border: 15px solid var(--color-scissors-1);
+}
+
+.scissors-container-start{
   justify-self: start;
   grid-column: 3;
   transform: translateX(-50%);
@@ -127,9 +133,26 @@ body{
 
 .rock-container{
   border: 15px solid var(--color-rock-1);
+}
+
+.rock-container-start{
   justify-self: center;
   grid-column: 2;
   grid-row: 2;
+}
+
+.play-again-btn{
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: white;
+  color: var(--color-background-one);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .rules-container{
@@ -218,6 +241,7 @@ body{
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-top: 2rem;
 }
 .attribution a {
   color: var(--color-scissors-1);
@@ -226,13 +250,18 @@ body{
 
 @media only screen and (max-width: 600px) {
 
-  /* .score-container {
-    margin: 3rem;
-  } */
-
   .rules-container{
     justify-content: center;
   }
+
+  .paper-container-start{
+    transform: translateX(30%);
+  }
+
+  .scissors-container-start{
+    transform: translateX(-30%);
+  }
+
   .popup-content{
     width: 100%;
     height: 100%;
@@ -243,6 +272,5 @@ body{
 
   .popup-content-header{
     padding-bottom: 6rem;
-
   }
 }

@@ -12,6 +12,7 @@
 </head>
 <body>
   <div class="container">
+
     <header class="score-container">
       <div class="title">
           <img src="images/logo.svg" alt="logo">
@@ -21,32 +22,31 @@
         <h1>12</h1>
       </div>
     </header>
+
     <div class="game-container" id="game">
       <div class="weapon-selection">
-        <div class="weapon-container paper-container"><img src="images/icon-paper.svg" alt="paper hand gesture"></div>
-        <div class="weapon-container scissors-container"><img src="images/icon-scissors.svg" alt="scissors hand gesture"></div>
-        <div class="weapon-container rock-container"><img src="images/icon-rock.svg" alt="rock hand gesture"></div>
+        <div class="weapon-container paper-container paper-container-start" onclick="console.log('Hello')"><img src="images/icon-paper.svg" alt="paper hand gesture"></div>
+        <div class="weapon-container scissors-container scissors-container-start"><img src="images/icon-scissors.svg" alt="scissors hand gesture"></div>
+        <div class="weapon-container rock-container rock-container-start"><img src="images/icon-rock.svg" alt="rock hand gesture"></div>
       </div>
-      <!-- Score
-      Rules
+      <div class="player-human">
+        <h3>You picked</h3>
+        <div class="weapon-container paper-container"><img src="images/icon-paper.svg" alt="paper hand gesture"></div>
+      </div>
+      <div class="game-outcome">
+        <h2>You Win</h2>
+        <button type="button" name="button" class="play-again-btn">Play Again</button>
+      </div>
+      <div class="player-computer">
+        <h3>The House picked</h3>
+        <div class="weapon-container paper-container"><img src="images/icon-paper.svg" alt="paper hand gesture"></div>
+      </div>
 
-      You Picked
-      The House Picked
-
-      You Win
-      You Lose
-
-      Play Again
-      <img src="images/icon-paper.svg" alt="paper hand gesture">
-      <img src="images/icon-rock.svg" alt="rock hand gesture">
-      <img src="images/icon-scissors.svg" alt="scissors hand gesture">
-      <img src="images/image-rules.svg" alt="game rules">
-      <img src="images/bg-triangle.svg" alt="background triangle"> -->
     </div>
+
     <div class="rules-container">
       <a href="#popup" class="rules-button">Rules</a>
     </div>
-
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

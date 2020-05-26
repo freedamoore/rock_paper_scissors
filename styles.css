@@ -111,6 +111,11 @@ body{
   align-items: center;
 }
 
+.weapon-container > *{
+  /* this is so that the child elements of the div won't interfere with the onclick event */
+  pointer-events: none;
+}
+
 .paper-container{
   border: 15px solid var(--color-paper-1);
 }

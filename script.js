@@ -10,6 +10,11 @@ const generateHouseWeapon = () => {
   return weaponChoice[randomWeapon];
 }
 
+const replaceWeaponClass = (weapon, element) => {
+    element.classList.remove("paper-container", "scissors-container", "rock-container")
+    element.classList.add(weapon +"-container");
+}
+
 const getWinner = (humanWeapon, computerWeapon) => {
   let outcome;
   let winner;
@@ -26,16 +31,17 @@ const getWinner = (humanWeapon, computerWeapon) => {
     winner = "House wins!";
   }
   totalScore += outcome;
-  console.log("Player weapon: " + humanWeapon);
-  console.log("Computer weapon: " + computerWeapon);
-  console.log("Total Outcome: " + outcome);
-  console.log("Total Score: " + totalScore);
-  console.log("Winner: " + winner);
+  // console.log("Player weapon: " + humanWeapon);
+  // console.log("Computer weapon: " + computerWeapon);
+  // console.log("Total Outcome: " + outcome);
+  // console.log("Total Score: " + totalScore);
+  // console.log("Winner: " + winner);
   score.textContent = String(totalScore);
   outcomeLabel.textContent = winner;
-
   document.getElementById("human-img").src = "images/icon-"+humanWeapon+".svg";
+  replaceWeaponClass(humanWeapon, document.getElementById("human-gesture"));
   document.getElementById("house-img").src = "images/icon-"+computerWeapon+".svg";
+  replaceWeaponClass(computerWeapon, document.getElementById("house-gesture"));
 }
 
 const toggleVisibility = (showOutcome) => {

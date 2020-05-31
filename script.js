@@ -33,6 +33,9 @@ const getWinner = (humanWeapon, computerWeapon) => {
   console.log("Winner: " + winner);
   score.textContent = String(totalScore);
   outcomeLabel.textContent = winner;
+
+  document.getElementById("human-img").src = "images/icon-"+humanWeapon+".svg";
+  document.getElementById("house-img").src = "images/icon-"+computerWeapon+".svg";
 }
 
 const toggleVisibility = (showOutcome) => {

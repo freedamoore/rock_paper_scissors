@@ -150,6 +150,21 @@ body{
   visibility: hidden;
 }
 
+.player-label{
+  font-size: 20px;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.player-outcome h2{
+  font-size: 40px;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .play-again-btn{
   border: 2px solid white;
   border-radius: 6px;

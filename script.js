@@ -1,5 +1,6 @@
 const weapons = document.querySelectorAll(".weapon");
 const score = document.getElementById("score-label");
+const outcomeLabel = document.getElementById("outcome-label");
 const playAgain = document.querySelector(".play-again-btn");
 let totalScore = 0;
 
@@ -11,26 +12,27 @@ const generateHouseWeapon = () => {
 
 const getWinner = (humanWeapon, computerWeapon) => {
   let outcome;
-
+  let winner;
   if (humanWeapon === computerWeapon){
     outcome = 0;
+    winner = "It's a draw!";
   }else if ((humanWeapon == "paper" && computerWeapon == "rock") ||
             (humanWeapon == "rock" && computerWeapon == "scissors") ||
             (humanWeapon == "scissors" && computerWeapon == "paper")){
     outcome = 1;
+    winner = "You win!";
   }else{
     outcome = -1;
+    winner = "House wins!";
   }
-
   totalScore += outcome;
-
-
   console.log("Player weapon: " + humanWeapon);
   console.log("Computer weapon: " + computerWeapon);
   console.log("Total Outcome: " + outcome);
   console.log("Total Score: " + totalScore);
-
+  console.log("Winner: " + winner);
   score.textContent = String(totalScore);
+  outcomeLabel.textContent = winner;
 }
 
 const toggleVisibility = (showOutcome) => {

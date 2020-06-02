@@ -1,4 +1,6 @@
-## My Solution to the below Frontend Mentor challenge. This has not been completed yet. Will update this when I'm done.
+## My Solution to the below Frontend Mentor challenge using HTML, CSS and vanilla JS
+
+
 
 # Frontend Mentor - Rock, Paper, Scissors
 

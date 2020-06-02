@@ -278,17 +278,35 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+  .title {
+    padding: 1rem 2rem;
+  }
+  .score{
+    padding: 1rem 2rem;
+    /* margin: 1rem 2rem; */
+  }
 
   .rules-container{
     justify-content: center;
   }
 
+  .weapon-selection{
+    height: 400px;
+  }
+  .weapon-container{
+    height: 120px;
+    width: 120px;
+  }
+
   .paper-container-start{
-    transform: translateX(30%);
+    transform: translateX(20%);
   }
 
   .scissors-container-start{
-    transform: translateX(-30%);
+    transform: translateX(-20%);
+  }
+  .round-outcome{
+    align-content: center;
   }
 
   .popup-content{
